@@ -7,14 +7,14 @@ from io import StringIO, TextIOWrapper
 from unittest.mock import patch
 
 
-class GET_Alarm_Test(unittest.TestCase):
+class TestGETAlarm(unittest.TestCase):
 
     def __init__(self, *args, **kwargs):
         '''
         Sets instance variables for easy access in all tests
         '''
         
-        super(GET_Alarm_Test, self).__init__(*args, **kwargs)
+        super(TestGETAlarm, self).__init__(*args, **kwargs)
         self._test_url = 'https://google.com'
         self._test_ini = 'GET_Alarm_Test.ini'
         self._test_csv = 'GET_Alarm_Test.csv'
