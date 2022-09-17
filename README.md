@@ -1,9 +1,11 @@
 # GET_alarm.py
 
 Script that sends a GET request to a specified URL at times in a provided list of timestamps
+
 GET requests are sent with an accuracy down to the second
 
 Assumes times given are for current date, and ignores any times earlier than the present
+
 For intended results, script should be set to run at 00:00 on the desired dates
 
 **NOTE**: This script simply sends a GET request and does nothing with the response;
