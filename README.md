@@ -1,6 +1,4 @@
-===========
-GET_alarm.py
-===========
+# GET_alarm.py
 
 Script that sends a GET request to a specified URL at times in a provided list of timestamps
 GET requests are sent with an accuracy down to the second
@@ -8,11 +6,10 @@ GET requests are sent with an accuracy down to the second
 Assumes times given are for current date, and ignores any times earlier than the present
 For intended results, script should be set to run at 00:00 on the desired dates
 
-This script simply sends a GET request and does nothing with the response;
+**NOTE**: This script simply sends a GET request and does nothing with the response;
 to tailor the script to your particular usecase, edit the GET_request() function on line 107
 
-Configuration
-==============
+## Configuration
 
 The provided `config.ini` contains three configuration options:
 
@@ -22,8 +19,7 @@ The provided `config.ini` contains three configuration options:
           : an example CSV file is available in this directory
 (3) `LOG` : the desired path to a logfile, which will be created or opened in append mode
 
-Running
-========
+## Running
 
 Requires Python3, no external dependencies
 
@@ -34,10 +30,9 @@ For example:
 
 `$ python getalarm.py`
 
-NOTE: on some platforms, the default command is `python3`, not `python`
+**NOTE**: on some platforms, the default command is `python3`, not `python`
 
-Optional Command Line Arguments
-================================
+## Optional Command Line Arguments
 
 Command line arguments can be used to override an existing `config.ini` file:
 
@@ -49,4 +44,4 @@ You can also directly provide the list of timestamps on the command line using:
 
 `--timestamps=` or `-t=` : overrides `CSV`
 
-NOTE: if there are duplicated or conflicting arguments, the last one given will be used
+**NOTE**: if there are duplicated or conflicting arguments, the last one given will be used
