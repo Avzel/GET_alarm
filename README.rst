@@ -1,5 +1,5 @@
 ===========
-getalarm.py
+GET_alarm.py
 ===========
 
 Script that sends a GET request to a specified URL at times in a provided list of timestamps
