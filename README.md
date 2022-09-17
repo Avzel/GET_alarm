@@ -1,6 +1,6 @@
 # GET_alarm.py
 
-Script that sends a GET request to a specified URL at times in a provided list of timestamps
+Script that sends GET requests to a specified URL at times indicated by a provided list of timestamps
 
 GET requests are sent with an accuracy down to the second
 
