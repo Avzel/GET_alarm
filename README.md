@@ -13,18 +13,18 @@ to tailor the script to your particular usecase, edit the GET_request() function
 
 The provided `config.ini` contains three configuration options:
 
-(1) `URL` : the URL on which to make the GET request
-(2) `CSV` : the path to a CSV file whose first line is a comma-separated list of desired timestamps
-          : the expected format is "hours:minutes:seconds" (zero-padded)
-          : an example CSV file is available in this directory
-(3) `LOG` : the desired path to a logfile, which will be created or opened in append mode
+1. `URL` : the URL on which to make the GET request
+2. `CSV` : the path to a CSV file whose first line is a comma-separated list of desired timestamps
+  + the expected format is "hours:minutes:seconds" (zero-padded)
+  + an example CSV file is available in this directory
+3. `LOG` : the desired path to a logfile, which will be created or opened in append mode
 
 ## Running
 
 Requires Python3, no external dependencies
 
-(1) Ensure `getalarm.py` and `config.ini` are present in the same directory
-(2) Launch a shell in that directory and call python on `getalarm.py`
+1. Ensure `getalarm.py` and `config.ini` are present in the same directory
+2. Launch a shell in that directory and call python on `getalarm.py`
 
 For example:
 
@@ -36,12 +36,12 @@ For example:
 
 Command line arguments can be used to override an existing `config.ini` file:
 
-`--url=` or `-u=` : overrides `URL`
-`--csv=` or `-c=` : overrides `CSV`
-`--log=` or `-l=` : overrides `LOG`
++ `--url=` or `-u=` : overrides `URL`
++ `--csv=` or `-c=` : overrides `CSV`
++ `--log=` or `-l=` : overrides `LOG`
 
 You can also directly provide the list of timestamps on the command line using:
 
-`--timestamps=` or `-t=` : overrides `CSV`
++ `--timestamps=` or `-t=` : overrides `CSV`
 
 **NOTE**: if there are duplicated or conflicting arguments, the last one given will be used
